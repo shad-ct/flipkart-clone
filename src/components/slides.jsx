@@ -1,4 +1,3 @@
-import React from 'react';
 
 import { Autoplay, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -8,18 +7,17 @@ import 'swiper/css/controller';
 
 function Slides() {
     const images = [
-        'https://images.pexels.com/photos/16770561/pexels-photo-16770561/free-photo-of-scenic-view-of-green-hills-and-mountains.jpeg',
-        'https://images.pexels.com/photos/20041507/pexels-photo-20041507/free-photo-of-close-up-of-sleeping-cat.jpeg',
-        'https://images.pexels.com/photos/12187128/pexels-photo-12187128.jpeg',
-        'https://images.pexels.com/photos/11785594/pexels-photo-11785594.jpeg'
+        'https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/1316eb53d6f52c71.jpg',
+        'https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/8074e7b2f6d2bfea.jpg',
+        'https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/1316eb53d6f52c71.jpg'
     ];
 
     return (
-        <section className='m-2 z-10'>
+        <section className='m-2 bg-[#ffffff] h-[33vh'>
             <Swiper
                 modules={[Autoplay, A11y]}
-                spaceBetween={30} // Adjust the spacing as needed
-                slidesPerView={1} // Show only one slide by default
+                spaceBetween={30} 
+                slidesPerView={1}
                 autoplay
             >
                 {images.map((img, index) => (
@@ -28,7 +26,7 @@ function Slides() {
                             <img
                                 src={img}
                                 alt={`slide-${index + 1}`}
-                                className='w-full h-[30vh] mx-auto select-none object-cover' // Updated class
+                                className='w-full h-[30vh] mx-auto select-none object-cover' 
                             />
                         </a>
                     </SwiperSlide>

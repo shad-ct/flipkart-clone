@@ -1,0 +1,12 @@
+.transition-opacity {
+    transition: opacity ease-out;
+}
+
+.pointer-events-none {
+    pointer-events: none; 
+}
+
+.login-btn:hover{
+    background-color: #2a55e5;
+    color: white;
+}
