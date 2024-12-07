@@ -1,12 +1,4 @@
 function FashionBest() {
-  const style = {
-    zoom: {
-      transition: "transform 0.3s ease", /* Smooth transition */
-    },
-    "zoom:hover": {
-      transform: "scale(1.1)", /* Scale the image to 110% on hover */
-    }
-  };
   const data = [
     {
       Name: "projector",
